@@ -15,11 +15,20 @@
   <meta property="og:image" content="https://monederoelectronico.net/wp-content/uploads/Payeer-car.webp">
   <meta property="og:url" content="https://superfolder.net/pauldev">
   <meta property="og:type" content="website">
-  
+
   <title>Earn $50 Instantly – Complete Verified Offers Online</title>
 
   <!-- Favicon -->
   <link rel="icon" href="https://yourwebsite.com/favicon.ico">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-45GH3W5W8P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-45GH3W5W8P');
+  </script>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -50,14 +59,30 @@
       padding: 0;
     }
     .hero {
-      background: url('https://i.pinimg.com/736x/20/68/07/206807f8bf5f8b96cb1ffc6e97708c71.jpg') center/cover no-repeat;
+      position: relative;
+      background: url('https://t3.ftcdn.net/jpg/00/94/29/26/360_F_94292686_SCY4n7Fa9kxWOeuIdH6XgBXDDeHkrkWA.jpg') center/cover no-repeat;
       height: 60vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
-      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
       text-align: center;
+      color: white;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Oscurecimiento de la imagen */
+      z-index: 1;
+    }
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     }
     .hero h1 {
       font-size: 3rem;
@@ -111,6 +136,14 @@
       font-weight: bold;
       cursor: pointer;
     }
+    .transaction-example img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -136,6 +169,11 @@
       <li>Your $50 reward will be credited to your Payeer account immediately after successful completion.</li>
     </ol>
     <p class="warning">⚠️ Important: Only users who follow the instructions and complete the offer will receive the reward.</p>
+    <div class="transaction-example">
+      <img src="https://signal.avg.com/hs-fs/hubfs/Blog_Content/Avg/Signal/AVG%20Signal%20Images/is_paypal_safe_signal/img-01.png?width=2778&height=2106&name=img-01.png" 
+           alt="Example of $50 Reward Transaction" 
+           
+    </div>
   </div>
 
   <!-- FAQ Section -->
@@ -167,4 +205,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
 
