@@ -1,91 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags for SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Earn $50 instantly by completing a verified offer. Fast, secure, and easy rewards directly to your Payeer or PayPal account. Follow the steps carefully.">
-  <meta name="keywords" content="earn $50, complete offers, CPA tasks, fast online money, secure earnings, Payeer rewards, online cash">
-  <meta name="author" content="EarnWithOffers">
-  <meta name="robots" content="index, follow">
-
+  <title>Earn $50 with Simple Offers</title>
+  
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="🔥 Claim Your $50 Reward Now! Complete a Verified Offer 🚀">
-  <meta property="og:description" content="Follow the instructions, complete a verified offer, and earn $50 quickly. Secure rewards sent to your Payeer or PayPal account.">
-  <meta property="og:image" content="https://monederoelectronico.net/wp-content/uploads/Payeer-car.webp">
-  <meta property="og:url" content="https://superfolder.net/pauldev">
-  <meta property="og:type" content="website">
-
-  <title>Earn $50 Instantly – Complete Verified Offers Online</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://yourwebsite.com/favicon.ico">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-45GH3W5W8P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-45GH3W5W8P');
-  </script>
-
-  <!-- Bootstrap CSS -->
+  <meta property="og:title" content="Earn $50 Instantly! 🎉 Complete an Easy Task" />
+  <meta property="og:description" content="Want to earn $50 easily? 💵 Complete a simple offer and get rewarded today! Don't miss out!" />
+  <meta property="og:image" content="https://monederoelectronico.net/wp-content/uploads/Payeer-car.webp" />
+  <meta property="og:url" content="https://superfolder.net/pauldev" />
+  <meta property="og:type" content="website" />
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Offer",
-    "name": "Earn $50 Instantly by Completing Verified Offers",
-    "description": "Complete a simple offer and earn $50 directly to your Payeer or PayPal account.",
-    "url": "https://superfolder.net/pauldev",
-    "priceCurrency": "USD",
-    "price": "0.00",
-    "availability": "https://schema.org/InStock",
-    "seller": {
-      "@type": "Organization",
-      "name": "EarnWithOffers"
-    }
-  }
-  </script>
-
   <style>
     body {
       font-family: 'Arial', sans-serif;
       background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
     }
     .hero {
-      position: relative;
-      background: url('https://t3.ftcdn.net/jpg/00/94/29/26/360_F_94292686_SCY4n7Fa9kxWOeuIdH6XgBXDDeHkrkWA.jpg') center/cover no-repeat;
+      background: url('https://i.pinimg.com/736x/20/68/07/206807f8bf5f8b96cb1ffc6e97708c71.jpg') center/cover no-repeat;
       height: 60vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
       color: white;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* Oscurecimiento de la imagen */
-      z-index: 1;
-    }
-    .hero h1,
-    .hero p {
-      position: relative;
-      z-index: 2;
-      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     }
     .hero h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: bold;
     }
     .instructions {
@@ -93,104 +36,104 @@
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin: 20px 0;
     }
-    .btn-action {
+    .btn-custom {
       background-color: #28a745;
       color: white;
+      border: none;
       padding: 15px 25px;
-      font-size: 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
     }
-    .btn-action:hover {
+    .btn-custom:hover {
       background-color: #218838;
     }
-    .warning {
-      font-weight: bold;
-      color: red;
+    .testimonial-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
     }
-    .footer {
+    footer {
       background-color: #222;
       color: #ccc;
+      padding: 10px;
       text-align: center;
-      padding: 10px 0;
-    }
-    .footer a {
-      color: #28a745;
-      text-decoration: none;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-    .faq {
-      background-color: #f9f9f9;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .faq details summary {
-      font-weight: bold;
-      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-<!-- Hero Section -->
+<!-- Header Section -->
 <header class="hero">
-  <div>
-    <h1>Earn $50 Instantly!</h1>
-    <p>Complete a simple offer and claim your reward today.</p>
+  <div class="text-center">
+    <h1>Claim Your $50 Instantly!</h1>
+    <p>Follow the steps and earn your reward today!</p>
   </div>
 </header>
 
 <!-- Main Content -->
 <div class="container my-5">
   <!-- Instructions Section -->
-  <div class="instructions">
-    <h2>How to Claim Your $50</h2>
-    <p>Follow these steps carefully to ensure you receive your reward:</p>
-    <ol>
-      <li>Click the button below to begin the process.</li>
-      <li>Complete the offer as instructed (e.g., signing up, filling out a survey, or downloading an app).</li>
-      <li>Ensure all steps of the offer are completed successfully. Double-check to avoid errors!</li>
-      <li>Your $50 reward will be credited to your Payeer account immediately after successful completion.</li>
-    </ol>
-    <p class="warning">⚠️ Important: Only users who follow the instructions and complete the offer will receive the reward.</p>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="instructions text-center">
+        <h3>How to Claim Your Reward</h3>
+        <ol class="text-start">
+          <li>Click the button below to access the offer.</li>
+          <li>Complete the simple task as instructed (e.g., sign up, fill out a survey, or download an app).</li>
+          <li>Ensure all steps are followed correctly.</li>
+          <li>Receive your $50 reward instantly once the offer is verified.</li>
+        </ol>
+        <p class="text-danger"><strong>Note:</strong> Only fully completed offers qualify for the reward.</p>
+        <div class="text-center mt-4">
+          <a href="https://superfolder.net/pauldev" class="btn btn-custom btn-lg">Start Offer Now</a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- FAQ Section -->
-  <div class="faq">
-    <h3>Frequently Asked Questions</h3>
-    <details>
-      <summary>How will I receive my $50 reward?</summary>
-      <p>Your reward will be sent directly to the payment method you specify (e.g., Payeer or PayPal).</p>
-    </details>
-    <details>
-      <summary>How long does it take to receive my reward?</summary>
-      <p>Once you complete the offer and it's verified, your reward will be credited immediately.</p>
-    </details>
+  <!-- Testimonials Section -->
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-8 text-center">
+      <h3>What People Are Saying</h3>
+      <p>Join thousands of users who have already earned their rewards!</p>
+    </div>
   </div>
-
-  <!-- Call-to-Action -->
-  <div class="text-center">
-    <a href="https://superfolder.net/pauldev" class="btn-action">Start Now</a>
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card">
+        <h5>Sarah T.</h5>
+        <p>"It was so easy! I got my $50 instantly. Highly recommend!"</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card">
+        <h5>Michael R.</h5>
+        <p>"This really works! Don't miss out!"</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card">
+        <h5>James L.</h5>
+        <p>"I was skeptical, but now I have my $50 card. It's real!"</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2024 EarnWithOffers | <a href="https://superfolder.net/pauldev">Start Your Offer</a></p>
-  <p><a href="/terms">Terms and Conditions</a> | <a href="/privacy">Privacy Policy</a></p>
+<!-- Footer Section -->
+<footer>
+  <p>&copy; 2024 EarnWithOffers.com | All Rights Reserved</p>
+  <p>Terms and Conditions Apply</p>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
